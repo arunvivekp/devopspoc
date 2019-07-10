@@ -4,7 +4,6 @@ import junit.framework.TestCase;
 import com.arun.devopspoc.model.Message;
 import com.arun.devopspoc.controller.MessageController;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
 
 public class MessageControllerTest extends TestCase
 {
@@ -19,7 +18,7 @@ public class MessageControllerTest extends TestCase
 
 	@Test
 	public void testPrintMessage() {
-		assetEquals(mc.printMessage(m), "Message : Arun");
+		assertEquals(mc.printMessage(m), "Message : Arun");
 	}
 
 	protected void tearDown() throws Exception {
