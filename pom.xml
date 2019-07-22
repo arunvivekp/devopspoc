@@ -23,4 +23,16 @@
     <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
     <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
   </build>
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-21-26-releases</name>
+        <url>http://ec2-35-178-212-178.eu-west-2.compute.amazonaws.com/artifactory/arun-message-repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-21-26-snapshots</name>
+        <url>http://ec2-35-178-212-178.eu-west-2.compute.amazonaws.com/artifactory/arun-message-repo</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
