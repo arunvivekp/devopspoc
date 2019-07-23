@@ -6,6 +6,6 @@ node {
   }
   
   stage ('Compile Package') {
-    sh 'mvn package'
+    sh 'mvn deploy'
   }
 }
